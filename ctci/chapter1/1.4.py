@@ -1,7 +1,7 @@
 #1.4
 #Palindrome Permutation
 
-def permutPalindrome(s: str):
+def permutPalindrome(s: str) -> bool:
     #assume utf-8
     b = [0] * 128
     for c in s:

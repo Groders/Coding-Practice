@@ -3,7 +3,7 @@
 #remove a character, or replace a character. Given two strings, write a function to check if they are
 #one edit (or zero edits) away. 
 
-def oneAway(s1: str, s2: str):
+def oneAway(s1: str, s2: str) -> bool:
 
     if (len(s1) == 1 and len(s2) == 0 or len(s2) == 1 and len(s1) == 0 ):
         return True

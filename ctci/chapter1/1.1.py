@@ -1,8 +1,7 @@
 #1.1
 #Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
 #cannot use additional data structures? 
-import sys 
-def isUnique(s: str):
+def isUnique(s: str) -> bool:
     #assume utf-8
     if (len(s) > 128):
         return False
