@@ -1,7 +1,7 @@
 #1.4
 #Palindrome Permutation
 
-def permutPalindrome(s: str) -> bool:
+def permutePalindrome(s: str) -> bool:
     #assume utf-8
     b = [0] * 128
     for c in s:
@@ -17,4 +17,4 @@ def permutPalindrome(s: str) -> bool:
 Tests = ['asdf', 'TEEst', '', '1fdas@34', 'abc', 'aabbccdde']
 
 for s in Tests:
-    print(permutPalindrome(s))
+    print(permutePalindrome(s))

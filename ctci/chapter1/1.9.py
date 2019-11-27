@@ -5,7 +5,7 @@
 #isSubstring (e.g.,"waterbottle"is a rotation of"erbottlewat").
 
 #in keyword is bascially substring
-def isUnisSubstring(s1: str, s2: str) -> bool:
+def isRotation(s1: str, s2: str) -> bool:
     if (len(s1) != len(s2)):
         return False
     s = s1*2

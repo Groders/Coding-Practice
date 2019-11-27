@@ -7,14 +7,16 @@ from typing import List
 #question was for bytes, but we can ignore that :)
 def rotateMatrix(m: List[List[bytes]]) -> List[List[bytes]]:
     n = len(m)//2
-    l = len(m)
-    for i in range(n):
-        for j in range(n):
+    l = len(m) -1
+    for i in range(0, n):
+        for j in range(i, l - i):
             temp = m[i][j]
-            m[i][j] = m[j][l-1-i] 
-            m[j][l-1-i] = m[l-1-i][l-1-j] 
-            m[l-1-i][l-1-j] = m[l-1-j][i] 
-            m[l-1-j][i] = temp
+            m[i][j] = m[j][l-i] 
+            m[j][l-i] = m[l-i][l-j] 
+            m[l-i][l-j] = m[l-j][i] 
+            m[l-j][i] = temp
+
+
     return m
 
 
