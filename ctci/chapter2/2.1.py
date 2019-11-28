@@ -7,8 +7,9 @@
 #   apperntly you can inplace merge sort in O(nlog(n)) 
 #   then you can remove duplicates in one pass, so better than n^2
 
-from random import randrange
 
+#assuming no cycles
+from random import randrange
 
 class Node:
     def __init__(self, dataval=None):
